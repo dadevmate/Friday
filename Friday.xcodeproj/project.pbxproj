@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		586AADE6298E92A200776EB3 /* VoiceRecogniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AADE5298E92A200776EB3 /* VoiceRecogniser.swift */; };
 		58B3786E298E6D4900F2A558 /* FridayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B3786D298E6D4900F2A558 /* FridayApp.swift */; };
 		58B37870298E6D4900F2A558 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B3786F298E6D4900F2A558 /* ContentView.swift */; };
 		58B37872298E6D4A00F2A558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B37871298E6D4A00F2A558 /* Assets.xcassets */; };
 		58B37875298E6D4A00F2A558 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B37874298E6D4A00F2A558 /* Preview Assets.xcassets */; };
+		58B3787D298E6DF500F2A558 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 58B3787C298E6DF500F2A558 /* OpenAISwift */; };
+		58B3787F298E728000F2A558 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B3787E298E728000F2A558 /* Launch Screen.storyboard */; };
+		58B37882298E7A3D00F2A558 /* SwiftUIGIF in Frameworks */ = {isa = PBXBuildFile; productRef = 58B37881298E7A3D00F2A558 /* SwiftUIGIF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		586AADE5298E92A200776EB3 /* VoiceRecogniser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecogniser.swift; sourceTree = "<group>"; };
+		586AADE7298E955C00776EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		58B3786A298E6D4900F2A558 /* Friday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B3786D298E6D4900F2A558 /* FridayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridayApp.swift; sourceTree = "<group>"; };
 		58B3786F298E6D4900F2A558 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		58B37871298E6D4A00F2A558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58B37874298E6D4A00F2A558 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58B3787E298E728000F2A558 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../Calcula/Shared/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B3787D298E6DF500F2A558 /* OpenAISwift in Frameworks */,
+				58B37882298E7A3D00F2A558 /* SwiftUIGIF in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +60,12 @@
 		58B3786C298E6D4900F2A558 /* Friday */ = {
 			isa = PBXGroup;
 			children = (
+				586AADE7298E955C00776EB3 /* Info.plist */,
 				58B3786D298E6D4900F2A558 /* FridayApp.swift */,
 				58B3786F298E6D4900F2A558 /* ContentView.swift */,
+				586AADE5298E92A200776EB3 /* VoiceRecogniser.swift */,
 				58B37871298E6D4A00F2A558 /* Assets.xcassets */,
+				58B3787E298E728000F2A558 /* Launch Screen.storyboard */,
 				58B37873298E6D4A00F2A558 /* Preview Content */,
 			);
 			path = Friday;
@@ -83,6 +95,10 @@
 			dependencies = (
 			);
 			name = Friday;
+			packageProductDependencies = (
+				58B3787C298E6DF500F2A558 /* OpenAISwift */,
+				58B37881298E7A3D00F2A558 /* SwiftUIGIF */,
+			);
 			productName = Friday;
 			productReference = 58B3786A298E6D4900F2A558 /* Friday.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,10 @@
 				Base,
 			);
 			mainGroup = 58B37861298E6D4900F2A558;
+			packageReferences = (
+				58B3787B298E6DF500F2A558 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				58B37880298E7A3D00F2A558 /* XCRemoteSwiftPackageReference "swiftui-gif" */,
+			);
 			productRefGroup = 58B3786B298E6D4900F2A558 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B3787F298E728000F2A558 /* Launch Screen.storyboard in Resources */,
 				58B37875298E6D4A00F2A558 /* Preview Assets.xcassets in Resources */,
 				58B37872298E6D4A00F2A558 /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58B37870298E6D4900F2A558 /* ContentView.swift in Sources */,
+				586AADE6298E92A200776EB3 /* VoiceRecogniser.swift in Sources */,
 				58B3786E298E6D4900F2A558 /* FridayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +292,13 @@
 				DEVELOPMENT_TEAM = N5QA5Q9HPB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Friday/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This is to help Friday listen to you.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This is to help Friday understand you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +325,13 @@
 				DEVELOPMENT_TEAM = N5QA5Q9HPB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Friday/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This is to help Friday listen to you.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This is to help Friday understand you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +369,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58B3787B298E6DF500F2A558 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		58B37880298E7A3D00F2A558 /* XCRemoteSwiftPackageReference "swiftui-gif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-gif";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58B3787C298E6DF500F2A558 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58B3787B298E6DF500F2A558 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+		58B37881298E7A3D00F2A558 /* SwiftUIGIF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58B37880298E7A3D00F2A558 /* XCRemoteSwiftPackageReference "swiftui-gif" */;
+			productName = SwiftUIGIF;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58B37862298E6D4900F2A558 /* Project object */;
 }
